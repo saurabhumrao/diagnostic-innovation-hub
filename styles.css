@@ -76,3 +76,6 @@
 
 /* Official Illinois Block I asset from the VetMed website. */
 .college .university-mark{display:block;width:40px;height:auto;flex-shrink:0}@media(max-width:760px){.college .university-mark{width:30px}}
+
+/* Campus photograph supplied for the website header. */
+.campus-header-image{height:clamp(170px,20vw,280px);overflow:hidden;border-bottom:3px solid var(--orange)}.campus-header-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 68%}@media(max-width:760px){.campus-header-image{height:170px}}
