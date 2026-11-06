@@ -35,7 +35,7 @@ function initialiseEnquiryForm() {
   const speciesOther = form.querySelector('#species-other');
   const button = form.querySelector('#send-enquiry');
   const status = form.querySelector('#inquiry-status');
-  const fallback = form.querySelector('#inquiry-email-fallback');
+  const fallback = document.querySelector('#inquiry-email-fallback');
   const defaultButton = button.innerHTML;
   let sending = false;
   function syncOther(select, container, input) {
@@ -113,8 +113,8 @@ function initialiseEnquiryForm() {
       showStatus('Your enquiry has been submitted. We’ll reply to the email address you provided.', 'success');
     } catch (error) {
       const message = error.message === 'activation_required'
-        ? 'Online email delivery is awaiting activation. Please email your enquiry directly to usaurabh@illinois.edu.'
-        : 'We could not confirm your submission. Your entries are still here. Please try again later or email usaurabh@illinois.edu directly.';
+        ? 'Online email delivery is awaiting activation. Use Contact us below to email your enquiry.'
+        : 'We could not confirm your submission. Your entries are still here. Please try again later or use Contact us below to email your enquiry.';
       showStatus(message, 'error');
       fallback.href = buildEnquiryMailto(currentPayload());
       fallback.hidden = false;
