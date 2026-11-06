@@ -25,7 +25,7 @@ The homepage Antibodies navigation, mAb capability panel and custom-development 
 
 Open mab-content.js on GitHub and use the pencil icon. Edit text inside quotation marks while preserving JavaScript syntax. Prices appear in the rates array. Standard package details appear in standardScope. Milestone fees appear in milestones. If rates or scope become approved, update the proposal labels and explanatory copy in mab-services.html as well.
 
-Rates are taken from the pricing presentation dated November 5, 2026. All remain proposals pending local cost, capacity and institutional rate review. Development delivery targets depend on successful clone development and productivity.
+Package scope is based on the pricing presentation dated November 5, 2026. The current standard academic project fee is $11,000 and the standard industry project fee is $14,000. Milestone fee allocations are to be agreed in the quotation. All remain proposals pending local cost, capacity and institutional rate review. Development delivery targets depend on successful clone development and productivity.
 
 ## Add the approved agreement and signing links
 

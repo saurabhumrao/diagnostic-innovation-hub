@@ -8,8 +8,8 @@ el('mab-intro').textContent=content.introduction;
 el('scope-rows').innerHTML=content.standardScope.map(([name,scope])=>`<tr><th scope="row">${escapeText(name)}</th><td>${escapeText(scope)}</td></tr>`).join('');
 el('excluded-items').innerHTML=content.exclusions.map(item=>`<li>${escapeText(item)}</li>`).join('');
 el('rate-cards').innerHTML=content.rates.map(rate=>`<article class="rate-card"><p class="rate-audience">${escapeText(rate.audience)}</p><h3>${escapeText(rate.name)}</h3><p class="rate-amount">${escapeText(rate.amount)}</p><p class="rate-basis">${escapeText(rate.basis)}</p><p class="rate-scope">${escapeText(rate.scope)}</p><button class="text-link" data-package="${escapeText(rate.code)}">Prepare a quote inquiry →</button></article>`).join('');
-el('milestone-rows').innerHTML=content.milestones.map(([name,fee,review],index)=>`<tr><th scope="row">${index+1}. ${escapeText(name)}</th><td>${money(fee)}</td><td>${escapeText(review)}</td></tr>`).join('');
-el('milestone-total').textContent=money(content.milestones.reduce((sum,stage)=>sum+stage[1],0));
+el('milestone-rows').innerHTML=content.milestones.map(([name,fee,review],index)=>`<tr><th scope="row">${index+1}. ${escapeText(name)}</th><td>${Number.isFinite(fee)?money(fee):'To be agreed'}</td><td>${escapeText(review)}</td></tr>`).join('');
+el('milestone-total').textContent=content.rates.find(rate=>rate.code==='academic').amount;
 function safeHttps(url){if(typeof url!=='string'||!url.trim())return null;try{const parsed=new URL(url);return parsed.protocol==='https:'?parsed.href:null}catch{return null}}
 for(const [id,key] of [['agreement-guidance','guidanceUrl'],['agreement-request','requestUrl'],['licensing-guidance','licensingUrl']]){const url=safeHttps(content.agreements[key]);if(url)el(id).href=url;else el(id).hidden=true}
 for(const [id,pending,key] of [['agreement-document','document-pending','documentUrl'],['agreement-sign','sign-pending','signingUrl']]){const url=safeHttps(content.agreements[key]);if(url){el(id).href=url;el(id).hidden=false;el(pending).hidden=true}}
