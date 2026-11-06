@@ -48,3 +48,16 @@
 @media(max-width:760px){.service-tabs #tab-mab{grid-column:1/-1}.antibody-hosts{grid-template-columns:1fr}.antibody-custom-details{padding:18px}.antibody-custom-details summary{font-size:18px}.antibody-product-grid{grid-template-columns:1fr}.antibody-product-grid article{padding:22px}}
 
 .service-panel .antibody-custom-details li{position:relative;padding-left:20px}.service-panel .antibody-custom-details li:before{position:absolute;left:0;top:0}
+
+/* Diagnostic research is separate from testing products and prices. */
+.service-tabs #tab-assays{line-height:1.5}.service-tabs #tab-assays>span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+.diagnostic-research-standards,.diagnostic-research-papers{margin:28px 0;padding:24px;background:#fff;border:1px solid #d9dfdf}
+.diagnostic-research-standards{border-top:3px solid #6f9d91}
+.service-panel .research-section-eyebrow{font-size:9px;font-weight:700;letter-spacing:.12em;color:#56636d;margin:0 0 12px}
+.diagnostic-research-standards h4,.diagnostic-research-papers h4{font-size:23px;line-height:1.35;margin:0 0 18px}
+.service-panel .diagnostic-research-standards>p:not(.research-section-eyebrow),.service-panel .diagnostic-research-papers>p:not(.research-section-eyebrow){font-size:13px;line-height:1.8}
+.diagnostic-research-standards>.text-link{display:block;margin-top:18px;color:#913b13;font-size:12px}
+.research-paper-list{margin:22px 0}.research-paper-list article{border-top:1px solid var(--line);padding:20px 0}.research-paper-list article:last-child{padding-bottom:0}.research-paper-list h5{font-family:Manrope,Arial,sans-serif;font-size:15px;line-height:1.6;margin:8px 0}.research-paper-list h5 a{text-decoration:underline;text-underline-offset:3px}
+.service-panel .research-paper-list p{font-size:12px;margin:10px 0 0;line-height:1.7}.service-panel .research-paper-list .paper-topic{font-size:9px;font-weight:700;letter-spacing:.08em;color:#913b13;margin:0}.service-panel .research-paper-list .paper-citation{font-size:11px;color:#56636d}
+.service-panel .lfa-price-scope{font-size:12px;margin:12px 0 0;color:#913b13;font-weight:700}
+@media(max-width:760px){.service-tabs #tab-assays{grid-column:1/-1}.diagnostic-research-standards,.diagnostic-research-papers{padding:18px}.diagnostic-research-standards h4,.diagnostic-research-papers h4{font-size:21px}}
