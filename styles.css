@@ -61,3 +61,7 @@
 .service-panel .research-paper-list p{font-size:12px;margin:10px 0 0;line-height:1.7}.service-panel .research-paper-list .paper-topic{font-size:9px;font-weight:700;letter-spacing:.08em;color:#913b13;margin:0}.service-panel .research-paper-list .paper-citation{font-size:11px;color:#56636d}
 .service-panel .lfa-price-scope{font-size:12px;margin:12px 0 0;color:#913b13;font-weight:700}
 @media(max-width:760px){.service-tabs #tab-assays{grid-column:1/-1}.diagnostic-research-standards,.diagnostic-research-papers{padding:18px}.diagnostic-research-standards h4,.diagnostic-research-papers h4{font-size:21px}}
+
+/* Ready-to-service diagnostic testing menu. */
+.diagnostic-methods strong{font-family:Manrope,Arial,sans-serif;font-size:17px;line-height:1.4}.diagnostic-methods .diagnostic-method-type{font-size:10px;font-weight:700;letter-spacing:.025em;color:#913b13;margin:9px 0}.diagnostic-methods{gap:24px}.diagnostic-methods>div{padding-top:14px}.diagnostic-methods>div>span:last-child{font-size:12px}.research-capability-visual .diagnostic-methods+img{border-top:1px solid var(--line)}
+@media(max-width:760px){.diagnostic-methods{grid-template-columns:1fr}.diagnostic-methods strong{font-size:18px}}
