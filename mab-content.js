@@ -1,10 +1,10 @@
-/* Edit wording, proposed rates and approved agreement links here. */
+/* Edit wording, service rates and approved agreement links here. */
 window.MAB_CONTENT = {
   title: 'Monoclonal antibodies for your diagnostic question.',
   introduction: 'Explore a custom development project, discuss production from an existing hybridoma, or define the evidence needed for your assay.',
   rates: [
     {name: 'Academic development', amount: '$11,000', basis: 'Starting fee per antigen', audience: 'External academic clients', scope: 'One suitable customer-supplied protein antigen and the standard development scope.', code: 'academic'},
-    {name: 'Industry development', amount: '$14,000', basis: 'Starting fee per antigen', audience: 'Industry clients', scope: 'The same proposed standard technical scope, subject to institutional external rates.', code: 'industry'},
+    {name: 'Industry development', amount: '$14,000', basis: 'Starting fee per antigen', audience: 'Industry clients', scope: 'The same standard technical scope, subject to institutional external rates.', code: 'industry'},
     {name: 'Development with characterization', amount: '$12,000–$15,000', basis: 'Indicative project range', audience: 'Scope agreed by quotation', scope: 'Standard development plus a defined application-validation or binding-characterization plan.', code: 'characterization'},
     {name: 'Existing hybridoma production', amount: '$1,500–$2,000', basis: 'Indicative fee per batch', audience: 'A suitable hybridoma already exists', scope: 'Culture, purification and basic QC, targeting 5–10 mg subject to clone productivity.', code: 'production'}
   ],
