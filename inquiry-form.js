@@ -52,6 +52,14 @@ function initialiseEnquiryForm() {
   target.addEventListener('change', syncChoices);
   species.addEventListener('change', syncChoices);
   syncChoices();
+  const requestedSubtype = new URLSearchParams(window.location.search).get('antibody');
+  if (['H1N1', 'H3N2', 'H5N1'].includes(requestedSubtype)) {
+    form.querySelector('#interest').value = 'mab';
+    target.value = 'Influenza A virus';
+    const goals = form.querySelector('#goals');
+    if (!goals.value) goals.value = 'I would like product details and a quotation for ' + requestedSubtype + ' mouse monoclonal antibodies.\nTarget protein, strain, application and quantity\n';
+    syncChoices();
+  }
   function selectionText(select, otherInput) {
     return select.value === 'other' ? otherInput.value.trim() : select.selectedOptions[0].textContent.trim();
   }

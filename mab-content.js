@@ -1,7 +1,7 @@
 /* Edit wording, service rates and approved agreement links here. */
 window.MAB_CONTENT = {
-  title: 'Monoclonal antibodies for your diagnostic question.',
-  introduction: 'Explore a custom development project, discuss production from an existing hybridoma, or define the evidence needed for your assay.',
+  title: 'Custom (mAb and pAb) development and application-specific screening',
+  introduction: 'Develop mouse monoclonal antibodies or rabbit polyclonal antibodies for your target. Connect antibody development with application-specific screening, characterization, pair selection and production options.',
   rates: [
     {name: 'Academic development', amount: '$11,000', basis: 'Starting fee per antigen', audience: 'External academic clients', scope: 'One suitable customer-supplied protein antigen and the standard development scope.', code: 'academic'},
     {name: 'Industry development', amount: '$14,000', basis: 'Starting fee per antigen', audience: 'Industry clients', scope: 'The same standard technical scope, subject to institutional external rates.', code: 'industry'},
