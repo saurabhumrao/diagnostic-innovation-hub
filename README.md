@@ -39,3 +39,8 @@ The site can be adapted into the existing VetMed CMS. Reuse approved institution
 - https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 - https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 - https://support.google.com/sites/answer/90569?hl=en
+
+
+## mAb service-page update
+
+See UPDATE_GUIDE.md for the new service page, proposed pricing, agreement-link configuration and editing instructions. The original single-page concept has been expanded with mab-services.html.
