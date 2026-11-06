@@ -118,6 +118,8 @@ function initialiseEnquiryForm() {
       showStatus(message, 'error');
       fallback.href = buildEnquiryMailto(currentPayload());
       fallback.hidden = false;
+      const contactDetails = document.querySelector('#contact-details');
+      if (contactDetails) contactDetails.open = true;
     } finally {
       clearTimeout(timeout);
       sending = false;
