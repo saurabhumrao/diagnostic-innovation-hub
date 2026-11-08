@@ -79,3 +79,9 @@
 
 /* Campus photograph supplied for the website header. */
 .campus-header-image{height:clamp(170px,20vw,280px);overflow:hidden;border-bottom:3px solid var(--orange)}.campus-header-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 68%}@media(max-width:760px){.campus-header-image{height:170px}}
+
+/* Portraits beside the contact names. */
+.contact-person{display:flex;align-items:center;gap:20px;margin-bottom:22px;min-width:0}
+.contact-card .contact-person h3{margin:0;min-width:0}
+.contact-portrait{display:block;width:84px;height:100px;flex-shrink:0;object-fit:cover;object-position:center 25%;border-radius:6px;background:var(--cream)}
+@media(max-width:420px){.contact-person{gap:16px}.contact-portrait{width:72px;height:86px}.contact-card .contact-person h3{font-size:22px}}
